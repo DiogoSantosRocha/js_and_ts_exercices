@@ -1,0 +1,13 @@
+let readlineSync = require('readline-sync');
+let res = readlineSync.question('Digite um número: ')
+function parimp(n) {
+  if(n%2==0){
+   return 'par';
+
+   }else{
+    return 'impar';
+
+    }
+}
+let rest = parimp(res);
+console.log(rest);
