@@ -1,0 +1,8 @@
+const funcionario = {
+  id: Number,
+  name: String,
+}
+
+funcionario.id = 1;
+funcionario.name = 'Diogo';
+console.log(funcionario);

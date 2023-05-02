@@ -1,0 +1,15 @@
+touch nome > crie o arquivo nome
+cd .. > volta uma pasta
+cd pasta > muda de pasta
+ls > liste os arquivos da pasta
+mkdir nome > crie a pasta nome
+rm -r nome > apaga o arquivo nome
+rmdir nome > apaga a apasta nome
+gedit nome > edita o arquivo nome (não esquecer de salvar)
+node arquivo.js > executa arquivo.js 
+git add . > adiciona arquivos para o git 
+git commit -m "mensagem" > finaliza um sessão de trabalho 
+git push > manda alterações para o github
+git pull > puxa alaterações do github
+nano nome > edita arquivo no terminal
+

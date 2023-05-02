@@ -1,0 +1,16 @@
+let readlineSync = require('readline-sync');
+let capstart = readlineSync.question('Digite o capital inicial: ');
+let taxa = readlineSync.question('Digite a taxa mensal: ');
+let tempo = readlineSync.question('Digite o tempo de pagamento em meses: ');
+
+function montanteComposto(capstart, taxa, tempo){
+   let montanteComposto = capstart * (1 + (taxa/100)) ** tempo;
+    return montanteComposto.toFixed(2);
+}
+function jurosCompostos(capstart, taxa, tempo){
+  let jurosCompostos = montanteComposto(capstart, taxa, tempo) - capstart;
+  return jurosCompostos;
+}
+
+console.log(`O montante é: ${montanteComposto(capstart, taxa, tempo)}`);
+console.log(`O juros é: ${jurosCompostos(capstart, taxa, tempo)}`);
